@@ -1,0 +1,27 @@
+------CODE BOOK-----------
+This code book provides a brief description of the variables used in the analysis script run_analysis.R for the Human Activity Recognition dataset.
+
+DATASET OVERVIEW
+The dataset used in this analysis is the Human Activity Recognition Using Smartphones Dataset. It includes measurements collected from smartphones while subjects performed various activities. The dataset is divided into training and testing sets.
+
+VARIABLES
+x_train, x_test: These variables store the feature measurements from the training and testing datasets, respectively. They contain the sensor data collected from the smartphones.
+
+y_train, y_test: These variables represent the activity labels associated with the feature measurements in the training and testing datasets, respectively. They indicate the activity performed by the subjects during data collection.
+
+subject_train, subject_test: These variables store the subject identifiers for the training and testing datasets, respectively. Each subject is assigned a unique identifier.
+
+features: This variable contains the feature vector, which represents the names of the sensor measurements captured by the smartphones.
+
+activityLabels: This variable contains the mapping between activity IDs and their corresponding descriptive names. It provides a human-readable label for each activity.
+
+setAllInOne: This variable represents the merged dataset, combining the training and testing datasets. It includes the activity labels, subject identifiers, and feature measurements.
+
+setForMeanAndStd: This variable is a subset of the merged dataset (setAllInOne) and contains only the measurements related to mean and standard deviation. It is created by selecting columns that have "mean" or "std" in their names.
+
+setWithActivityNames: This variable is a modified version of setForMeanAndStd, where the activity IDs are replaced with their corresponding descriptive activity names. This step provides more meaningful labels for the activities.
+
+secTidySet: This variable represents the second tidy dataset created from setWithActivityNames. It contains the average of each variable for each activity and each subject. This dataset is the final output of the analysis.
+
+OUTPUT
+The analysis script generates a file named MyTidyDataset.txt, which contains the second tidy dataset (secTidySet). It provides the average of each variable for each activity and each subject.
