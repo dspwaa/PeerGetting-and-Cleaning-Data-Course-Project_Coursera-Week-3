@@ -10,17 +10,17 @@ The dataset used for this analysis is the Human Activity Recognition Using Smart
 # Getting Started
 
 After downloading, unzipping, and placing the data in the directory of this repository,...
+Run the script run_analysis.R to automatically unzip the dataset and extract the necessary files.
 
-# Run the script run_analysis.R to automatically unzip the dataset and extract the necessary files.
 Execute the analysis:
 
 Run the script run_analysis.R to perform the following steps:
-1 Merge the training and test sets into one dataset.
-2 Extract the measurements on mean and standard deviation for each measurement.
-3 Use descriptive activity names to label the activities in the dataset.
-4 Label the dataset variables with descriptive names.
-5 Create a second, independent tidy dataset with the average of each variable for each activity and each subject.
-6 Save the tidy dataset as MyTidyDataSet.txt in the current directory.
+1. Merge the training and test sets into one dataset.
+2. Extract the measurements on mean and standard deviation for each measurement.
+3. Use descriptive activity names to label the activities in the dataset.
+4. Label the dataset variables with descriptive names.
+5. Create a second, independent tidy dataset with the average of each variable for each activity and each subject.
+6. Save the tidy dataset as MyTidyDataSet.txt in the current directory.
 
 # Results
 After running the analysis, a second tidy dataset secTidySet.txt will be generated. This dataset contains the average of each variable for each activity and each subject.
